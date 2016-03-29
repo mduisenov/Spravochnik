@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="drawerArrowStyle" format="reference" />
+    <attr name="height" format="dimension" />
+    <attr name="isLightTheme" format="boolean" />
+    <attr name="linkBuilderStyle" format="reference" />
+    <attr name="title" format="string" />
+    <attr name="defaultLinkColor" format="color" />
+    <!--<attr name="menu" format="reference" />-->
+    <!--<attr name="itemIconTint" format="color" />-->
+    <!--<attr name="itemTextColor" format="color" />-->
+    <!--<attr name="itemBackground" format="reference" />-->
+
+    <declare-styleable name="MyViewPager">
+        <attr name="swipeable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ForegroundImageView">
+        <attr name="android:foreground" />
+    </declare-styleable>
+    <declare-styleable name="LimitedWidthFrameLayout">
+        <attr name="max_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="animDuration" format="integer" />
+        <attr name="collapseDrawable" format="reference" />
+        <attr name="expandDrawable" format="reference" />
+    </declare-styleable>
+</resources>

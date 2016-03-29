@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <kz.test.spravochnik.ui.view.LimitedWidthFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:max_width="@dimen/max_hotel_item_fragment_width">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/building_location_header"
+                style="@style/Zoning.Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/building_general_location" />
+
+            <RelativeLayout
+                android:id="@+id/address_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="8.0dip"
+                android:paddingTop="16.0dip">
+
+                <ImageView
+                    android:id="@+id/ic_location"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_location_dark" />
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/building_address"
+                    style="@style/Building.BigText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginTop="-2.0dip"
+                    android:layout_toRightOf="@id/ic_location"
+                    android:text="Невский пр. 88" />
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/building_location"
+                    style="@style/Building.SmallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/building_address"
+                    android:layout_below="@id/building_address"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginTop="-1.0dip"
+                    android:text="Санкт-Петербург, Россия" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/map_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="120.0dip"
+                android:background="@android:color/white"
+                android:paddingLeft="56.0dip"
+                android:paddingRight="16.0dip">
+
+                <FrameLayout
+                    android:id="@+id/map_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:id="@+id/map_clickable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bkg_selectable_rect_simple"
+                    android:clickable="true" />
+            </FrameLayout>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/building_name_header"
+                style="@style/Zoning.Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/md_keylines"
+                android:layout_marginBottom="@dimen/md_keylines"
+                android:text="@string/building_name_caption" />
+
+            <RelativeLayout
+                android:id="@+id/building_name_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.0dip">
+
+                <ImageView
+                    android:id="@+id/ic_building_grey"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_toRightOf="@+id/ic_building_grey"
+                    android:orientation="vertical">
+
+                    <com.devspark.robototextview.widget.RobotoTextView
+                        android:id="@+id/building_full_name"
+                        style="@style/Building.BigText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="phone"
+                        android:text="ГКП на ПХВ Городская поликлиника №4"/>
+
+                    <!--<com.devspark.robototextview.widget.RobotoTextView-->
+                    <!--android:id="@+id/phone_seconday_item"-->
+                    <!--style="@style/Building.SmallText"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="-1.0dip"-->
+                    <!--android:text="dates" />-->
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:id="@+id/building_name_bottom_offset"
+                android:layout_width="match_parent"
+                android:layout_height="16.0dip"
+                android:background="@android:color/white" />
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/building_phone_header"
+                style="@style/Zoning.Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/building_phone_caption"
+                android:layout_marginBottom="@dimen/md_keylines"/>
+
+            <RelativeLayout
+                android:id="@+id/building_phone_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.0dip">
+
+                <ImageView
+                    android:id="@+id/ic_phone_grey"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_phone_grey" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_toRightOf="@+id/ic_phone_grey"
+                    android:orientation="vertical">
+
+                    <com.devspark.robototextview.widget.RobotoTextView
+                        android:id="@+id/building_phone"
+                        style="@style/Building.BigText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="phone"
+                        android:text="+7(7172)51-88-35, +7(7172)51-88-36, +7(7172)51-88-61, +7(7172)51-88-50, +7(7172)51-88-55, +7(7172)51-88-57, +7(7172)51-88-37" />
+
+                    <!--<com.devspark.robototextview.widget.RobotoTextView-->
+                        <!--android:id="@+id/phone_seconday_item"-->
+                        <!--style="@style/Building.SmallText"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="-1.0dip"-->
+                        <!--android:text="dates" />-->
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:id="@+id/phone_bottom_offset"
+                android:layout_width="match_parent"
+                android:layout_height="16.0dip"
+                android:background="@android:color/white" />
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/manager_header"
+                style="@style/Zoning.Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/building_manager_caption"
+                android:layout_marginBottom="@dimen/md_keylines"/>
+
+            <RelativeLayout
+                android:id="@+id/manager_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.0dip">
+
+                <ImageView
+                    android:id="@+id/ic_account_grey"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_account_grey" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_toRightOf="@+id/ic_account_grey"
+                    android:orientation="vertical">
+
+                    <com.devspark.robototextview.widget.RobotoTextView
+                        android:id="@+id/manager_name"
+                        style="@style/Building.BigText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Шаймерденов Серик Аменович" />
+
+                    <com.devspark.robototextview.widget.RobotoTextView
+                        android:id="@+id/manager_phone"
+                        style="@style/Building.SmallText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-1.0dip"
+                        android:autoLink="phone"
+                        android:text="+7(7172)51-88-54" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:id="@+id/manager_bottom_offset"
+                android:layout_width="match_parent"
+                android:layout_height="16.0dip"
+                android:background="@android:color/white" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginTop="16.0dip" />
+    </kz.test.spravochnik.ui.view.LimitedWidthFrameLayout>
+</android.support.v4.widget.NestedScrollView>

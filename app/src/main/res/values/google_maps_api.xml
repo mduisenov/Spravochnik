@@ -1,0 +1,12 @@
+<resources>
+
+    <!--Debug google map key at home-->
+    <!--<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA99eiUecRx6oIMnv0lHT7SAX8BFzcwO3g</string>-->
+
+    <!--Debug google map key at work-->
+    <!--<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCcir5ZmQds95AECYvRXP5vbKV4iDV2mKg</string>-->
+
+    <!--Release google map key-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDt5zwTrYJWXBgcHqDcZ4G29GqJC8TK9RM</string>
+
+</resources>

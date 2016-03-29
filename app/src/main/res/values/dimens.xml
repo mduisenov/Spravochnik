@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="search_view_item_radius">2.0dip</dimen>
+    <dimen name="search_view_item_padding">3.0dip</dimen>
+    <dimen name="toolbar_elevation">8.0dip</dimen>
+
+    <dimen name="side_dp">8dp</dimen>
+    <dimen name="md_keylines">16dp</dimen>
+    <dimen name="article_keylines">72dp</dimen>
+    <dimen name="article_titles">20sp</dimen>
+    <dimen name="app_bar_height">256dp</dimen>
+
+    <dimen name="max_hotel_item_fragment_width">568.0dip</dimen>
+</resources>

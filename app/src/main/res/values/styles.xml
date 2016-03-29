@@ -1,0 +1,104 @@
+<resources>
+
+    <style name="Theme.SpravochnikTheme" parent="@style/Theme.BaseSpravochnikTheme.Base" />
+    <style name="Theme.SpravochnikTheme.Activity.Main" parent="@style/Theme.SpravochnikTheme" />
+
+    <style name="Theme.BaseSpravochnikTheme.Base" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:spinnerStyle">@style/Widget.AppCompat.Spinner.Underlined</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="linkBuilderStyle">@style/LinkBuilder</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorSecondary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/blue</item>
+        <item name="spinnerStyle">@style/Widget.AppCompat.Spinner.Underlined</item>
+    </style>
+    <style name="LinkBuilder">
+        <item name="defaultLinkColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="StrokedTextView">
+        <!--<item name="android:textAppearance">?android:keyboardViewStyle</item>-->
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/stroked_text_background</item>
+        <item name="android:padding">4.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_margin">4.0dip</item>
+        <item name="android:minWidth">64.0dip</item>
+    </style>
+    <style name="runningText">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="about_primary_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="about_secondary_text">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="blueButton" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/button_blue_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Header" />
+    <style name="Zoning.Header" parent="@style/Header">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/gray_464748</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">22.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:background">@color/gray_F3F3F3</item>
+        <item name="typeface">roboto_medium</item>
+    </style>
+    <style name="Building" />
+    <style name="Building.BigText" parent="@style/Building">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/gray_4D4D4D</item>
+    </style>
+    <style name="Building.SmallText" parent="@style/Building">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/gray_797A7C</item>
+    </style>
+    <style name="BuildingStreetsViewBtnBkg">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/orange_FFB433</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bkg_selectable_rect</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="typeface">roboto_medium</item>
+    </style>
+</resources>

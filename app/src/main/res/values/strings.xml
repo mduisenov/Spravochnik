@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Справочник</string>
+    <string name="server_connecting">Пожалуйста подoждите</string>
+    <string name="retry">Повторить</string>
+    <string name="empty_field">Поле не может быть пустым</string>
+
+    <string name="map">На карте</string>
+    <string name="internet_connection_problem">Проблемы соединения с сервером</string>
+    <string name="oops">Упс, что-то пошло не так</string>
+    <string name="menu_share">Поделиться</string>
+    <string name="menu_hospital">Госпитали</string>
+    <string name="menu_cinema">Кинотеатры</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="drawer_open">Открыть меню</string>
+    <string name="drawer_close">Закрыть меню</string>
+
+    <string name="hospital">Госпитал</string>
+    <string name="cinema">Кинотеатр</string>
+
+    <!--<string name="hospital_address">улица %1$s: %2$s</string>-->
+    <string name="address">улица %1$s, %2$s</string>
+
+    <string name="building_general_location">Местоположение</string>
+    <string name="show_street_view">посмотреть панораму</string>
+    <string name="building_name_caption">Название</string>
+    <string name="building_phone_caption">Телефон</string>
+    <string name="building_manager_caption">Сотрудник</string>
+    <string name="manager_name_position">%1$s, %2$s</string>
+</resources>

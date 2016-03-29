@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/primary"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_hospital"
+            android:checked="true"
+            android:icon="@drawable/ic_hospital_building_default"
+            android:title="@string/menu_hospital" />
+        <item
+            android:id="@+id/menu_cinema"
+            android:icon="@drawable/ic_film_default"
+            android:title="@string/menu_cinema" />
+    </group>
+    <group
+        android:id="@+id/secondary"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuSettings"
+            android:icon="@drawable/ic_settings_default"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/menuShare"
+            android:icon="@drawable/ic_share_default"
+            android:title="@string/menu_share" />
+    </group>
+</menu>
